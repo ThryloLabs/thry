@@ -10,6 +10,9 @@ import {
   listAvailableUtilities,
 } from "../lib/package-utils.js";
 import { getInstalledThryUtilities } from "../lib/utils.js";
+import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
 
 const installed = getInstalledThryUtilities();
 const maybeSubcommand = process.argv[2];
@@ -23,10 +26,16 @@ if (installed.includes(maybeSubcommand)) {
 } else {
   const program = new Command();
 
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = dirname(__filename);
+  const packageJson = JSON.parse(
+    readFileSync(join(__dirname, "../package.json"))
+  );
+
   program
     .name("thry")
     .description("Thrylo Labs CLI")
-    .version("0.0.13")
+    .version(packageJson.version)
     .enablePositionalOptions(); // 🔥 this enables full args passthrough
 
   program
