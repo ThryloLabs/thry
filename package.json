@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThryloLabs/thry.git"
+    "url": "https://github.com/ThryloLabs/thry.git"
   },
   "license": "MIT",
   "author": "Thrylo Labs",
