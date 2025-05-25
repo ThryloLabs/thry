@@ -3,8 +3,7 @@
 The **Thry CLI** is your gateway to powerful developer utilities built by [Thrylo Labs](https://github.com/ThryloLabs). It serves as a modular orchestrator for installing, running, and managing tools like `dstat`, `tsnap`, and others — all under a single command: `thry`.
 
 ![npm](https://img.shields.io/npm/v/@thrylolabs/thry)
-![node](https://img.shields.io/node/v/@thrylolabs/thry)
-![license](https://img.shields.io/npm/l/@thrylolabs/thry)
+![license](https://img.shields.io/badge/license-MIT-blue)
 ![downloads](https://img.shields.io/npm/dm/@thrylolabs/thry)
 
 ---
