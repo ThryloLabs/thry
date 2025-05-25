@@ -1,8 +1,3 @@
-Here’s a clean, professional `README.md` for the `@thrylolabs/thry` package:
-
----
-
-````markdown
 # 🧪 Thry — Thrylo Labs CLI
 
 The **Thry CLI** is your gateway to powerful developer utilities built by [Thrylo Labs](https://github.com/ThryloLabs). It serves as a modular orchestrator for installing, running, and managing tools like `dstat`, `tsnap`, and others — all under a single command: `thry`.
@@ -29,7 +24,6 @@ The **Thry CLI** is your gateway to powerful developer utilities built by [Thryl
 ```bash
 npm install -g @thrylolabs/thry
 ```
-````
 
 ---
 
