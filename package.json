@@ -1,6 +1,6 @@
 {
   "name": "@thrylolabs/thry",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Thrylo Labs CLI — install and manage modular utilities developed by Thrylo Labs.",
   "bin": {
     "thry": "bin/thry.js"
