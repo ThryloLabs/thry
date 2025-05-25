@@ -5,6 +5,7 @@ The **Thry CLI** is your gateway to powerful developer utilities built by [Thryl
 ![npm](https://img.shields.io/npm/v/@thrylolabs/thry)
 ![license](https://img.shields.io/badge/license-MIT-blue)
 ![downloads](https://img.shields.io/npm/dm/@thrylolabs/thry)
+[![Contribute](https://img.shields.io/badge/contributions-welcome-blue.svg)](https://github.com/thrylolabs/.github/blob/main/CONTRIBUTING.md)
 
 ---
 
