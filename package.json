@@ -1,0 +1,36 @@
+{
+  "name": "@thrylolabs/thry",
+  "version": "1.0.0",
+  "description": "Thrylo Labs CLI — install and manage modular utilities developed by Thrylo Labs.",
+  "bin": {
+    "thry": "./bin/thry.js"
+  },
+  "main": "./bin/thry.js",
+  "keywords": [
+    "cli",
+    "thry",
+    "thrylolabs",
+    "developer-tools",
+    "command-line"
+  ],
+  "homepage": "https://github.com/ThryloLabs/thry#readme",
+  "bugs": {
+    "url": "https://github.com/ThryloLabs/thry/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThryloLabs/thry.git"
+  },
+  "license": "MIT",
+  "author": "Thrylo Labs",
+  "type": "module",
+  "scripts": {
+    "start": "node ./bin/thry.js"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "child_process": "^1.0.2",
+    "commander": "^14.0.0",
+    "execa": "^9.5.3"
+  }
+}

@@ -1,0 +1,29 @@
+name: 📦 Publish to NPM on Release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  publish:
+    name: 🚀 Publish NPM Package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧾 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          registry-url: "https://registry.npmjs.org/"
+
+      - name: 📦 Install dependencies
+        run: npm ci
+
+      - name: 🔐 Authenticate with NPM
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
+      - name: 🚀 Publish to NPM
+        run: npm publish --access public
